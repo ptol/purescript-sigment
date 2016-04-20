@@ -23,6 +23,6 @@
     "purescript-tuples": "~0.4.0",
     "purescript-maybe": "~0.3.5",
     "purescript-arrays": "",
-		"virtual-pixi": ""
+		"virtual-pixi": "~0.1"
   }
 }
