@@ -1,10 +1,11 @@
 module Sigment where
-import Sigment.Dom as D
-import Control.Monad.Eff.Ref
-import Control.Monad.Eff
-import Sigment.Core
-import Data.Maybe
+
 import Prelude
+import Control.Monad.Eff.Ref (REF, Ref, readRef, writeRef, newRef)
+import Control.Monad.Eff (Eff)
+import Data.Maybe (Maybe(..), maybe)
+import Sigment.Core (Config, updateStage, requestAnimationFrame, initSigment)
+import Sigment.Dom as D
 
 type EvalResult state eff = Eff eff state
 type Dispatch a eff = a -> Eff eff Unit
