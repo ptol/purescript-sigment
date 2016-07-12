@@ -1,5 +1,3 @@
-// module Sigment.Core
-
 var execActionF = null;
 var renderer = null;
 var stage = null;
@@ -19,7 +17,10 @@ function initSigment(pExecAction, pMapFunction, pConfig, cb){
     resize(window.innerWidth, window.innerHeight);
   }
   if(config.sprites.length > 0){
-    PIXI.loader.add(config.sprites).load(() => {cb();startRender();});
+    PIXI.loader.add(config.sprites).load(function(){
+      cb();
+      startRender();
+    });
   }else{
     cb();
     startRender();
@@ -71,7 +72,7 @@ function render(timestamp) {
   if (!prevTimestamp) prevTimestamp = timestamp;
   var interval = timestamp - prevTimestamp;
   prevTimestamp = timestamp;
-  mapFunction(x => {
+  mapFunction(function(x){
     execActionF(x(interval))();
   })(config.frameAction);
   TWEEN.update(timestamp);

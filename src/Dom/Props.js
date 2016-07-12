@@ -1,5 +1,3 @@
-// module Sigment.Dom.Props
-
 function createProp(key,value){
   return {key:key, value:value};
 }
