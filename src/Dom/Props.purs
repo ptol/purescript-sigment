@@ -6,11 +6,11 @@ import Data.Function.Uncurried (Fn2, Fn4, runFn2, runFn4)
 
 type Props = Array Prop
 
-foreign import data Prop :: *
+foreign import data Prop :: Type
 
-foreign import data Rectangle :: *
+foreign import data Rectangle :: Type
 
-foreign import data Point :: *
+foreign import data Point :: Type
 
 foreign import none :: Prop
 

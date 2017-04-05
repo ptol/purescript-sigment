@@ -2,7 +2,7 @@ module Sigment.Core where
 
 import Prelude (Unit)
 import Control.Monad.Eff (Eff)
-import Data.Function.Eff (EffFn1, EffFn4, runEffFn1, runEffFn4)
+import Control.Monad.Eff.Uncurried (EffFn1, EffFn4, runEffFn1, runEffFn4)
 import Data.Maybe (Maybe)
 import Sigment.Dom (Node)
 
