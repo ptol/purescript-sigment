@@ -22,7 +22,7 @@ yoyoOnce = [yoyo true, repeat 1]
 repeat :: Int -> Prop
 repeat = createProp "repeat"
 
-foreign import data EasingType :: *
+foreign import data EasingType :: Type
 
 type InAndOut a =
   { in :: a

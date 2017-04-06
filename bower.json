@@ -17,15 +17,15 @@
   },
   "homepage": "https://github.com/ptol/purescript-sigment",
   "dependencies": {
-    "purescript-functions": "~1.0.0",
-    "purescript-eff-functions": "~1.0.0",
-    "purescript-refs": "~1.0.0",
-    "purescript-tuples": "~1.0.0",
-    "purescript-maybe": "~1.0.0",
-    "purescript-arrays": "~1.0.0",
+    "purescript-functions": "^3.0.0",
+    "purescript-eff": "^3.0.0",
+    "purescript-refs": "^3.0.0",
+    "purescript-tuples": "^4.0.0",
+    "purescript-maybe": "^3.0.0",
+    "purescript-arrays": "^4.0.0",
     "virtual-pixi": "0.1.1"
   },
   "devDependencies": {
-    "purescript-psci-support": "^1.0.0"
+    "purescript-psci-support": "^3.0.0"
   }
 }

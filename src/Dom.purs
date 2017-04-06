@@ -3,7 +3,7 @@ module Sigment.Dom where
 import Sigment.Dom.Props (Props)
 import Data.Function.Uncurried (Fn2, Fn4, Fn3, runFn2, runFn4, runFn3)
 
-foreign import data Node :: *
+foreign import data Node :: Type
 
 foreign import _createNode :: Fn3 String Props (Array Node) Node
 
